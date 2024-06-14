@@ -1,0 +1,46 @@
+.info {
+  color: #3f4765;
+  overflow: visible;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  margin-top: 32px;
+}
+
+.main {
+  height: 85%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.number {
+  font-size: 24px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.graph {
+  width: 200px;
+  height: 220px;
+
+  padding: 12px 0px;
+}
+
+.money {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (max-width: 1024px) {
+  .info {
+    flex-direction: column;
+    gap: 24px;
+  }
+}

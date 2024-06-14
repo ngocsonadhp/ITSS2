@@ -1,0 +1,116 @@
+.list {
+  background: #ffffff;
+  box-shadow: -24px 0px 80px rgba(49, 79, 124, 0.02);
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.income {
+  color: #24a959;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  border-bottom: 2px solid #eceff9;
+
+  padding: 12px;
+}
+
+.item:first-child {
+  border-top: 2px solid #eceff9;
+}
+
+.item button {
+  height: 30px;
+
+  border: #f85842 1px solid;
+  background: white;
+  color: #3f4765;
+  box-shadow: none;
+}
+
+.listWrapper {
+  overflow-y: auto;
+  max-height: calc(100vh - 480px);
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+
+  color: #3f4765;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 24px;
+  gap: 24px;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 32px;
+
+  color: #3f4765;
+}
+
+.totalDigit {
+  color: #24a959;
+}
+
+.total button {
+  background: #f85842;
+}
+.item span {
+  padding: 0px 12px;
+}
+
+.empty {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+
+  color: #3f4765;
+}
+
+.loading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 2px solid #eceff9;
+
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .total {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .list {
+    font-size: 10px;
+    padding: 12px;
+  }
+
+  .item {
+    font-size: 14px;
+  }
+
+  .item span {
+    padding: 0px 4px;
+  }
+}

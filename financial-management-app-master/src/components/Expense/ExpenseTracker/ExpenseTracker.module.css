@@ -1,0 +1,16 @@
+.main {
+  display: grid;
+  background-color: #f4f6f8;
+
+  row-gap: 20px;
+  column-gap: 20px;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: minmax(1fr, 420px) 1fr;
+}
+
+@media (max-width: 1000px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+}

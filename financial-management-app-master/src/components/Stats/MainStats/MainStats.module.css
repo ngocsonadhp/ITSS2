@@ -1,0 +1,101 @@
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+
+  width: 100%;
+}
+
+.title {
+  margin-bottom: 24px;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.money {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.expense {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+}
+.income {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  font-size: 20px;
+}
+
+.notify {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  font-size: 20px;
+}
+
+.number {
+  color: #1cac70;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.numberTax {
+  font-size: 24px;
+  font-weight: 700;
+  color: #f85842;
+}
+
+.taxLink a {
+  text-decoration: none;
+  color: gray;
+  border: 1px gray solid;
+  border-radius: 12px;
+  padding: 8px;
+
+  margin-left: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.taxLink:hover a {
+  opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .taxLink {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .taxLink a {
+    margin-left: 0px;
+  }
+}

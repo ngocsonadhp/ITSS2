@@ -1,0 +1,124 @@
+.side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  width: 376px;
+  height: calc(100vh - 132px);
+
+  transition: transform 0.3s ease;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 32px;
+
+  color: #3f4765;
+  margin-left: 16px;
+  margin-bottom: 24px;
+}
+.menu {
+  padding: 16px;
+  height: 100%;
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #3f4765;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.point {
+  margin-bottom: 20px;
+
+  border-radius: 30px;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #9fa8c7;
+}
+
+.point:hover {
+  background: rgba(228, 243, 14, 0.5);
+}
+
+.point:active {
+  opacity: 0.7;
+}
+
+.point svg {
+  background: white;
+  border-radius: inherit;
+  fill: #9fa8c7;
+  border: 1px solid #e7eeef;
+  width: 18%;
+  height: 30%;
+  padding: 8px;
+}
+
+.pointFlex {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 30px;
+}
+
+.active {
+  background: #ebfab3;
+}
+
+.active svg {
+  border: 1px solid linear-gradient(151.19deg, #1cac70 21.77%, #eddc46 111.4%);
+  background: linear-gradient(151.19deg, #1cac70 21.77%, #eddc46 111.4%);
+  border-radius: 8px;
+  fill: white;
+  border-radius: 30px;
+}
+
+.active a {
+  color: #3f4765;
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #9fa8c7;
+  cursor: pointer;
+}
+
+.logout svg {
+  border: 1px solid #e7eeef;
+  border-radius: 8px;
+
+  fill: #9fa8c7;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+}
+
+@media (max-width: 768px) {
+}

@@ -1,0 +1,88 @@
+.inp {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  min-width: 200px;
+
+  max-width: 300px;
+  height: 46px;
+  overflow: hidden;
+  display: flex;
+}
+.inp input.error {
+  border: 1px solid #f85842;
+}
+
+.inp .label {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  font-size: 20px;
+  color: #8488b7;
+  font-weight: 500;
+  transform-origin: 0 0;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+.inp input {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  max-width: 300px;
+  border: 0;
+  font-family: inherit;
+  padding: 16px 52px 0 12px;
+  height: 46px;
+  font-size: 14px;
+  font-weight: 400;
+  background: #f4f6f8;
+  border: 1px solid #f4f6f8;
+  color: #000;
+  transition: all 0.15s ease;
+  border-radius: 12px;
+}
+.inp input:hover {
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid #2e8b43;
+}
+.inp input:not(:placeholder-shown) + .label {
+  color: rgba(0, 0, 0, 0.5);
+  transform: translate3d(0, -8px, 0) scale(0.6);
+}
+.inp input:focus {
+  background: rgba(0, 0, 0, 0.05);
+  outline: none;
+  border: 1px solid #2e8b43;
+}
+.inp input:focus + .label {
+  color: #2e8b43;
+  transform: translate3d(0, -8px, 0) scale(0.6);
+}
+.inp input:focus + .label + .focus-bg {
+  transform: scaleX(1);
+  transition: all 0.1s ease;
+}
+
+.errorValidation {
+  color: #f85842;
+  margin-top: 4px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.closeIcon {
+  position: absolute;
+  left: 85%;
+  top: 20%;
+}
+
+.closeIcon svg {
+  transform: rotate(45deg);
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}

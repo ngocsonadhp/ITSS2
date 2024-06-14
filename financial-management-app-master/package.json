@@ -1,0 +1,98 @@
+{
+  "name": "tax-calculator",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.2",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/user-event": "^13.5.0",
+    "browserify-sign": "^4.2.3",
+    "chart.js": "^4.3.0",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "firebase": "^9.23.0",
+    "react": "^18.2.0",
+    "react-calendar": "^4.3.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.11.2",
+    "react-scripts": "5.0.1",
+    "react-spinners": "^0.13.8",
+    "redux": "^4.2.1",
+    "redux-devtools-extension": "^2.13.9",
+    "tslib": "^2.6.2",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test ",
+    "lint": "eslint .",
+    "eject": "react-scripts eject",
+    "e2e": "cypress open"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "lines": 50
+      }
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/preset-env": "^7.22.20",
+    "@babel/preset-react": "^7.22.15",
+    "@craco/craco": "^7.1.0",
+    "@firebase/testing": "^0.20.11",
+    "@testing-library/react": "^14.0.0",
+    "@wdio/cli": "^8.12.2",
+    "@wdio/local-runner": "^8.12.1",
+    "@wdio/mocha-framework": "^8.12.1",
+    "@wdio/spec-reporter": "^8.12.2",
+    "chromedriver": "^114.0.2",
+    "crypto-browserify": "^3.12.0",
+    "css-loader": "^6.7.3",
+    "cypress": "^13.3.0",
+    "dotenv-webpack": "^8.1.0",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-es": "^4.1.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "firebase-mock": "^2.3.2",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "prettier": "3.0.3",
+    "process": "^0.11.10",
+    "react-app-rewired": "^2.2.1",
+    "react-test-renderer": "^18.2.0",
+    "redux-mock-store": "^1.5.4",
+    "stream-browserify": "^3.0.0",
+    "style-loader": "^3.3.2",
+    "vm-browserify": "^1.1.2",
+    "wdio-chromedriver-service": "^8.1.1"
+  }
+}

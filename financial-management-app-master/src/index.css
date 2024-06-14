@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", sans-serif;
+  min-height: 100%;
+}
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media all and (min-width: 801px) and (max-width: 959px) {
+  /* put your css styles in here */
+}
+
+@media all and (min-width: 769px) and (max-width: 800px) {
+  /* put your css styles in here */
+}
+
+@media all and (min-width: 569px) and (max-width: 768px) {
+  /* put your css styles in here */
+}
+
+@media all and (min-width: 481px) and (max-width: 568px) {
+  /* put your css styles in here */
+}
+
+@media all and (min-width: 321px) and (max-width: 480px) {
+  /* put your css styles in here */
+}
+
+@media all and (min-width: 0px) and (max-width: 320px) {
+  /* put your css styles in here */
+}
